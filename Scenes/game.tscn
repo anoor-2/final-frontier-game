@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://7jxxcnda5ytf"]
+[gd_scene load_steps=5 format=3 uid="uid://7jxxcnda5ytf"]
 
 [ext_resource type="PackedScene" uid="uid://c5s05cbhv7e3n" path="res://Scenes/player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://dicftbmm0xmml" path="res://Scenes/background.tscn" id="2_qxrlw"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebmjs"]
+normal = Vector2(-1, 0)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qxrlw"]
+normal = Vector2(1, 0)
 
 [node name="Game" type="Node2D"]
 
@@ -9,3 +16,20 @@ position = Vector2(1, 218)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(3, 5)
+
+[node name="BoundaryRight" type="StaticBody2D" parent="."]
+position = Vector2(535, 217)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoundaryRight"]
+position = Vector2(43, 21)
+shape = SubResource("WorldBoundaryShape2D_ebmjs")
+
+[node name="BoundaryLeft" type="StaticBody2D" parent="."]
+position = Vector2(-573, 175)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoundaryLeft"]
+shape = SubResource("WorldBoundaryShape2D_qxrlw")
+
+[node name="Background" parent="." instance=ExtResource("2_qxrlw")]
+z_index = -42
+position = Vector2(0, 2)

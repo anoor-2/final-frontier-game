@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://dicftbmm0xmml"]
+
+[ext_resource type="Texture2D" uid="uid://txrh5igvccba" path="res://Assets/parallax/moon/moon_sky.png" id="1_sn1xx"]
+
+[node name="Background" type="Node2D"]
+
+[node name="MoonSky" type="Sprite2D" parent="."]
+position = Vector2(93.00001, 70)
+scale = Vector2(0.8294737, 0.831)
+texture = ExtResource("1_sn1xx")
+
+[node name="MoonSky2" type="Sprite2D" parent="."]
+position = Vector2(300, 50)
+rotation = 1.2361377
+texture = ExtResource("1_sn1xx")
+region_enabled = true
+region_rect = Rect2(896.83606, 15.819061, 588.6127, 231.64752)
+
+[node name="MoonSky3" type="Sprite2D" parent="."]
+position = Vector2(-69.00006, 305)
+scale = Vector2(0.9026316, 0.776)
+texture = ExtResource("1_sn1xx")
+region_enabled = true
+region_rect = Rect2(687.97363, -3.1684265, 1188.6174, 508.865)
+
+[node name="MoonSky4" type="Sprite2D" parent="."]
+position = Vector2(-0.9999962, -31.000002)
+rotation = 0.3141776
+scale = Vector2(0.8748758, 0.9480061)
+texture = ExtResource("1_sn1xx")
+region_enabled = true
+region_rect = Rect2(851.09485, -3.8950195, 691.145, 239.24252)
+
+[node name="MoonSky5" type="Sprite2D" parent="."]
+position = Vector2(294, 244.00002)
+rotation = 0.27308396
+scale = Vector2(1.05683, 1.1727477)
+texture = ExtResource("1_sn1xx")
+region_enabled = true
+region_rect = Rect2(851.09485, -3.8950195, 691.145, 239.24252)
+
+[node name="MoonSky6" type="Sprite2D" parent="."]
+position = Vector2(295.99994, 91)
+scale = Vector2(0.6670514, 0.7964906)
+texture = ExtResource("1_sn1xx")
+region_enabled = true
+region_rect = Rect2(1101.9011, -3.8950195, 440.51, 257.00854)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(3, 5)
+
+[node name="MoonSky7" type="Sprite2D" parent="."]
+position = Vector2(-340.00003, -187)
+scale = Vector2(0.42247874, 0.63439727)
+texture = ExtResource("1_sn1xx")
+region_enabled = true
+region_rect = Rect2(1101.9011, -3.8950195, 440.51, 257.00854)
