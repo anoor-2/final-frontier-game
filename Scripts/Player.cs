@@ -5,7 +5,7 @@ using System;
 
 public partial class Player : CharacterBody2D 
 {
-	public int Speed = 200; //movement speed in pixels per sec I think
+	public int Speed = 350; //movement speed in pixels per sec I think
 	public override void _PhysicsProcess(double delta) 
 	
 	// _PhsyicsProcess is every physics frame, usually 60 per minute and delta is the time since the LAST frame - Why double???? 
@@ -26,8 +26,8 @@ public partial class Player : CharacterBody2D
 			velocity.X -= Speed;
 		}
 
-		// Apply movement
+		// Applying movements
 		Velocity = velocity;
-		MoveAndSlide();
+		MoveAndSlide(); //What does this do??
 	}	
 }
