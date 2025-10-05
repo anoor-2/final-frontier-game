@@ -31,5 +31,5 @@ position = Vector2(-573, 175)
 shape = SubResource("WorldBoundaryShape2D_qxrlw")
 
 [node name="Background" parent="." instance=ExtResource("2_qxrlw")]
-z_index = -42
-position = Vector2(0, 2)
+z_index = -45
+position = Vector2(-2, 3)
