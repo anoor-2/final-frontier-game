@@ -11,7 +11,7 @@ public partial class Player : CharacterBody2D
 	// _PhsyicsProcess is every physics frame, usually 60 per minute and delta is the time since the LAST frame - Why double???? 
 
 	{
-		Vector2 velocity = Velocity; //Veloocity2 is BUILT IN, storing it in a VARIABLE
+		Vector2 velocity = Velocity; //Velocity2 is BUILT IN, storing it in a VARIABLE
 
 		// ship isn't gonna move unitl someone presses something
 		velocity.X = 0;
