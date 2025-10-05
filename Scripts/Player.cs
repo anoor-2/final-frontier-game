@@ -1,26 +1,27 @@
 using Godot;
 using System;
 
-//HOW do I get this to move?? 
+//"partial" lets allows the thing to be split across different files and "player" is the name of the script/class
 
-public partial class Player : CharacterBody2D
+public partial class Player : CharacterBody2D 
 {
-  // Movement speed in pixels per second
-	public int Speed = 200;
+	public int Speed = 200; //movement speed in pixels per sec I think
+	public override void _PhysicsProcess(double delta) 
+	
+	// _PhsyicsProcess is every physics frame, usually 60 per minute and delta is the time since the LAST frame - Why double???? 
 
-	public override void _PhysicsProcess(double delta)
 	{
-		Vector2 velocity = Velocity;
+		Vector2 velocity = Velocity; //Veloocity2 is BUILT IN, storing it in a VARIABLE
 
-		// Reset horizontal velocity
+		// ship isn't gonna move unitl someone presses something
 		velocity.X = 0;
 
-		// Check for input
+		//Checking for input, positive speed 
 		if (Input.IsActionPressed("ui_right"))
 		{
 			velocity.X += Speed;
 		}
-		if (Input.IsActionPressed("ui_left"))
+		if (Input.IsActionPressed("ui_left")) //Same thing, this is just negative 
 		{
 			velocity.X -= Speed;
 		}
