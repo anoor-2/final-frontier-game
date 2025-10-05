@@ -23,7 +23,6 @@ project/assembly_name="Final Frontier Game"
 
 folder_colors={
 "res://Assets/": "pink",
-"res://Assets/Bonus (enemies)/": "orange",
 "res://Assets/Bonus (player ship)/": "orange",
 "res://Assets/Health Bar/": "orange",
 "res://Assets/parallax/": "orange",

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cao2yej8g8lga"
-path="res://.godot/imported/kamikaze-sheet.png-4389f72b20501a5308e1a5e501f064a0.ctex"
+uid="uid://clwsb270dtcpd"
+path="res://.godot/imported/PixelStarshipsPackage_Asteroids_01.png-ec5890852c14e306f4497902412fa70e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bonus (enemies)/kamikaze-sheet.png"
-dest_files=["res://.godot/imported/kamikaze-sheet.png-4389f72b20501a5308e1a5e501f064a0.ctex"]
+source_file="res://Assets/PixelStarshipsPackage_Asteroids_01.png"
+dest_files=["res://.godot/imported/PixelStarshipsPackage_Asteroids_01.png-ec5890852c14e306f4497902412fa70e.ctex"]
 
 [params]
 

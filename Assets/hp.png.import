@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci52ijdgu3jym"
-path="res://.godot/imported/random_shooter-sheet.png-21bba319327378344c13579bfccd25d1.ctex"
+uid="uid://dxjdpy0dxyfdp"
+path="res://.godot/imported/hp.png-4086b88f9a0ded645efd601d3a86f8ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bonus (enemies)/random_shooter-sheet.png"
-dest_files=["res://.godot/imported/random_shooter-sheet.png-21bba319327378344c13579bfccd25d1.ctex"]
+source_file="res://Assets/hp.png"
+dest_files=["res://.godot/imported/hp.png-4086b88f9a0ded645efd601d3a86f8ef.ctex"]
 
 [params]
 
