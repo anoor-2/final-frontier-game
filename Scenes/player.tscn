@@ -33,7 +33,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x3wgy"]
-radius = 33.241535
+radius = 36.055508
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_cvnsp")
@@ -44,9 +44,9 @@ scale = Vector2(1.46875, 1.4375)
 sprite_frames = SubResource("SpriteFrames_fkybt")
 animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.5323553
+frame_progress = 0.17855988
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -5)
+position = Vector2(0.9999995, -2)
 rotation = 0.93775797
 shape = SubResource("CircleShape2D_x3wgy")

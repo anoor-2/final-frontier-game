@@ -23,6 +23,7 @@ project/assembly_name="Final Frontier Game"
 
 folder_colors={
 "res://Assets/": "pink",
+"res://Assets/Health Bar/": "orange",
 "res://Assets/Parallax/": "orange",
 "res://Scenes/": "pink",
 "res://Scripts/": "pink"
