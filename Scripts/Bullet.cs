@@ -1,13 +1,13 @@
 using Godot;
 using System;
 
-/*
-Does this count as inheritence?
-If I make this one private and my player script has one in public, would that count as encapsulation?
-*/
-
-private partial class Bullet : Area2D 
+public partial class Bullet : Area2D
 {
-	
-	
+	[Export]
+	public float Speed = 500;
+
+	public override void _PhysicsProcess(double delta)
+	{
+	GlobalPosition += Vector2.Up * Speed * (float)delta;
+	}
 }

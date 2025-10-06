@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bhii5wsdfqc1t"]
+[gd_scene load_steps=7 format=3 uid="uid://dilqk5te3cly6"]
 
-[ext_resource type="Script" uid="uid://y4swonerv7p3" path="res://Scripts/Bullet.cs" id="1_oduel"]
+[ext_resource type="Script" uid="uid://bgu2br03428pd" path="res://Scripts/Bullet.cs" id="1_oduel"]
 [ext_resource type="Texture2D" uid="uid://cr1mg0d0k07nn" path="res://Assets/Bonus (player ship)/shooting laser-sheet.png" id="1_xjght"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oduel"]
@@ -26,19 +26,23 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xjght"]
-radius = 13.999975
-height = 162.0
+radius = 9.999982
+height = 113.99585
 
-[node name="Bullet" type="Area2D"]
+[node name="bullet" type="Area2D"]
 script = ExtResource("1_oduel")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.6376295, 222.58424)
 rotation = -1.5889091
+scale = Vector2(0.6730791, 0.70340914)
 sprite_frames = SubResource("SpriteFrames_6afsh")
 autoplay = "default"
 frame_progress = 0.33918613
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, -1.0000001)
+position = Vector2(1.6376309, 224.58427)
 rotation = -0.001970351
 shape = SubResource("CapsuleShape2D_xjght")
+
+[node name="Camera2D" type="Camera2D" parent="."]
